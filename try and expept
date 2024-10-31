@@ -1,0 +1,29 @@
+while True:
+    try:
+        number1 = int(input("Enter first number: "))
+        number2 = int(input("Enter second number: "))
+
+        while True:
+            op = input("Choose +, -, *, or /")
+            if op == "+":
+                print(number1 + number2)
+                break
+            elif op == "-":
+                print(number1 - number2)
+                break
+            elif op == "*":
+                print(number1 * number2)
+                break
+            elif op == "/":
+                print(number1 / number2)
+                break
+            else:
+                print("Enter a valid operation")
+
+        break
+
+    except ZeroDivisionError:
+        print("Number cannot be divded by 0")
+
+    except:
+        print("Please enter a valid number")
